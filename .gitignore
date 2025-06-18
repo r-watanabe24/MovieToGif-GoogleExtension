@@ -1,0 +1,41 @@
+# Node.js の依存ディレクトリ
+node_modules/
+
+# ビルド成果物
+dist/
+build/
+out/
+
+# npm / Yarn ログ
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# 環境変数ファイル
+.env
+.env.*
+
+# Chrome 拡張のパッケージ
+*.crx
+*.zip
+
+# OS 一時ファイル
+.DS_Store
+Thumbs.db
+
+# VSCode / IDE 設定
+.vscode/
+.idea/
+
+# 一時ファイル / キャッシュ
+*.tmp
+*.temp
+*.cache/
+
+# 画像や動画のローカルテスト用出力
+downloads/
+*.gif
+
+# その他エディタ／ツール固有
+*.swp
+*~

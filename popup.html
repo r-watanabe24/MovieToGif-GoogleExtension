@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Video → GIF Converter</title>
+    <link rel="stylesheet" href="./popup.css" />
+</head>
+
+<body>
+    <div class="popup-container">
+        <h1>Video → GIF</h1>
+
+        <div class="form-group">
+            <label for="widthInput">解像度（幅 px）</label>
+            <input type="number" id="widthInput" value="300" min="1" />
+        </div>
+
+        <div class="form-group">
+            <label for="fpsInput">フレームレート（FPS）</label>
+            <input type="number" id="fpsInput" value="10" min="1" />
+        </div>
+
+        <div class="form-group">
+            <label for="uploader">動画ファイルを選択</label>
+            <input type="file" id="uploader" accept="video/*" multiple />
+        </div>
+
+        <button id="convertBtn">変換開始</button>
+
+        <div id="loading" hidden="true">
+            <div class="spinner"></div>
+            <span>変換中…お待ちください</span>
+        </div>
+
+        <ul id="downloads"></ul>
+    </div>
+
+    <!-- gif.js 本体 -->
+    <script src="assets/gifjs/gif.js"></script>
+    <!-- メインのスクリプト -->
+    <script src="popup.js" type="module"></script>
+</body>
+
+</html>

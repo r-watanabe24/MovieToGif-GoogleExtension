@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Video → GIF Converter",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "downloads"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/gifjs/gif.worker.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';"
+    }
+}
