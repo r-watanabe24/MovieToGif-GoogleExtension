@@ -1,4 +1,4 @@
-# Video → GIF Converter - Chrome Extension
+# MovieToGif-GoogleExtension
 
 ローカルの動画ファイル（MP4 など）を、解像度やフレームレートを指定して GIF に一括変換し、自動ダウンロードできる Chrome 拡張機能です。
 
